@@ -1,0 +1,44 @@
+article{
+	margin-bottom: 20px;
+	padding: 40px;
+	background: white;
+}
+article h2{
+	font:30px/36px '微软雅黑','黑体',sans-serif;
+}
+article h2 a{
+	color: #1e73be;
+}
+article h2 a:hover{
+	color: black;
+}
+
+article .entry_header{
+	color: #666;
+	font-size: 12px;
+}
+
+article .entry_header a{
+	color: #666;
+	font-size: 12px;
+}
+article .entry_header a:hover{
+	color: #1e73be;
+}
+
+article p{
+	margin-top: 30px;
+	color:rgb(58,58,58);
+	font:15px/22px '新宋体','宋体',serif;
+}
+
+#lside .page-bar{
+	color:rgb(58,58,58);
+	font:17px/22px '微软雅黑','黑体',sans-serif;
+}
+#lside .page-bar a{
+	color:#1e73be;
+}
+#lside .page-bar a:hover{
+	color:rgb(58,58,58);
+}

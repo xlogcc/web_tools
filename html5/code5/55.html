@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="提交到哪里去" method="提交方式get/post" enctype="multipart/form-data">
+		姓名: <input type="text" name="username">
+		<br>
+		密码: <input type="password" name="pwd" >
+		<br>
+		性别:
+		男: <input type="radio" name="gender" value="man">
+		女: <input type="radio" name="gender" value="woman">
+		<br>
+		爱好:
+		篮球: <input type="checkbox" name="hobby" value="bas">
+		足球: <input type="checkbox" name="hobby" value="foot">
+		<br>
+		学历:
+		<select name="xueli" id="">
+			<option value="xiaoxue">小学</option>
+			<option value="chuzhong">初中</option>
+			<option value="daxue">大学</option>
+		</select>
+		<br>
+		图片: <input type="file" name="pic">
+		<br>
+		<input type="hidden" name="ip" value="192.168.1.1">
+		<br>
+		<textarea name="self-intro" id="" cols="30" rows="10"></textarea>
+		<br>
+		<input type="submit" value="在这里提交">
+		<input type="reset" value="点我重置">
+	</form>
+</body>
+</html>

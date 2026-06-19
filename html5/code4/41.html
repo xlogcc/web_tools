@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="nav.css">
+	<link rel="stylesheet" href="rside.css">
+	<link rel="stylesheet" href="lside.css">
+	<link rel="stylesheet" href="header.css">
+	<style>
+	body{
+		background: #EFEFEF;
+	}
+		nav{
+			height: 60px;
+			background: #222;
+		}
+		#main{
+			width:1100px;
+			/*height: 500px;*/
+			background: #EFEFEF;
+			margin:0 auto;
+		}
+		#lside{
+			width:805px;
+			/*height: 500px;*/
+			background: #EFEFEF;
+			float: left;
+		}
+		#rside{
+			width: 275px;
+			/*height: 500px;*/
+			background: #EFEFEF;
+			float: right;
+		}
+		#clear{
+			clear:both;
+		}
+		footer{
+			height: 65px;
+			background: rgb(34, 34, 34);
+		}
+	</style>
+	<style>
+		aside:first-child{
+			margin-top: 20px;
+		}
+		article:first-child{
+			margin-top: 20px;
+		}
+	</style>
+	<style>
+		#main::after{
+			content: '';
+			display:block;
+			clear:both;
+		}
+	</style>
+	<style>
+		/* aside:last-child{
+			margin-bottom: 0px;
+		} */
+		/* article:last-child{
+			margin-bottom: 0px;
+		} */
+		article:last-of-type{
+			margin-bottom: 0px;
+		}
+	</style>
+	<style>
+		@font-face {
+		font-family: 'FontAwesome';
+		src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+		src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0')
+		format('embedded-opentype'),
+		url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),
+		url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),
+		url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),
+		url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular')
+		format('svg');
+		font-weight: normal;
+		font-style: normal;
+		}
+	</style>
+	<style>
+		.awesome::before{
+			content: '\f024';
+			font-family: 'FontAwesome';
+		}
+	</style>
+	<style>
+		img{
+			position: absolute;
+			right: 0px;
+			top: 0px;
+		}
+		nav ul li:nth-child(2){
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>xx的blog</h1>
+		<h4>好好学习</h4>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">导航</a></li>
+			<li>
+				<a href="#">导航</a>
+				<img src="./news.png" alt="">
+			</li>
+			<li><a href="#">导航</a></li>
+			<li><a href="#">导航</a></li>
+		</ul>
+	</nav>
+	<div id="main">
+		<div id="lside">
+			<article>
+				<h2><a href="#">好日子</a></h2>
+				<div class="entry_header">
+					<time>2019-09-09</time>
+					by
+					<a href="#">玫瑰奶茶</a>
+					<a href="#" class="awesome">闲谈随笔</a>
+					<a href="#">5条评论</a>
+				</div>
+				<p>
+					有时突然想说我爱你，<br>
+					有时突然慌张忧伤。<br>
+					像迷路的孩子，<br>
+					东张西望。<br>
+					伸出双手想抓住，时光像泥鳅一样。
+				</p>
+			</article>
+			<article>
+				<h2><a href="#">好日子</a></h2>
+				<div class="entry_header">
+					<time>2019-09-09</time>
+					by
+					<a href="#">玫瑰奶茶</a>
+					<a href="#">闲谈随笔</a>
+					<a href="#">5条评论</a>
+				</div>
+				<p>
+					有时突然想说我爱你，<br>
+					有时突然慌张忧伤。<br>
+					像迷路的孩子，<br>
+					东张西望。<br>
+					伸出双手想抓住，时光像泥鳅一样。
+				</p>
+			</article>
+			<div class="page-bar">
+				Pages:
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+			</div>
+		</div>
+		<div id="rside">
+			<aside>
+				<form action="#">
+					<input type="search" placeholder="Search......">
+				</form>
+			</aside>
+			<aside>
+				<h4>测试标题</h4>
+				<ul>
+					<li><a href="#">栏目名称</a>&nbsp;(1)</li>
+					<li><a href="#">栏目名称</a>&nbsp;(1)</li>
+					<li><a href="#">栏目名称</a>&nbsp;(1)</li>
+					<li><a href="#">栏目名称</a>&nbsp;(1)</li>
+				</ul>
+			</aside>
+			<aside>
+				<h4>测试标题</h4>
+				<ul>
+					<li><a href="#">栏目名称</a>&nbsp;(1)</li>
+					<li><a href="#">栏目名称</a>&nbsp;(1)</li>
+					<li><a href="#">栏目名称</a>&nbsp;(1)</li>
+					<li><a href="#">栏目名称</a>&nbsp;(1)</li>
+				</ul>
+			</aside>
+		</div>
+		<!-- <div id="clear"></div> -->
+	</div>
+	<footer>Copyright &copy; 2017 · GeneratePress · WordPress</footer>
+</body>
+</html>

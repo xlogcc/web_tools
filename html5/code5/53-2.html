@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#comm{
+		width: 400px;
+		height: 400px;
+		background: green;
+	}
+		#a{
+			width: 200px;
+			height: 100px;
+			background: red;
+			position:absolute;
+			top:20px;
+			left: 40px;
+			z-index: 2;
+		}
+		#b{
+			width: 200px;
+			height: 100px;
+			background: yellow;
+			position:absolute;
+			top:40px;
+			left: 80px;
+			z-index:1;
+		}
+		#c{
+			width: 200px;
+			height: 100px;
+			background: blue;
+			position:absolute;
+			top:60px;
+			left: 120px;
+		}
+	</style>
+</head>
+<body>
+	<div id="comm"></div>
+	<div id="a"></div>	
+	<div id="b"></div>
+	<div id="c"></div>
+</body>
+</html>

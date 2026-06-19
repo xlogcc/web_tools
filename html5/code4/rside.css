@@ -1,0 +1,29 @@
+aside{
+	padding:40px;
+	margin-bottom: 20px;
+	background: white;
+}
+form{
+	width:195px;
+	height: 46px;
+}
+input{
+	width:195px;
+	height: 46px;
+	box-sizing:border-box;
+	border:1px solid #ccc;
+	background: #FAFAFA;
+	font-size: 16px;
+	color: #666;
+	padding:10px 15px;
+}
+
+aside h4{
+	color: black;
+	font:20px/24px '微软雅黑','黑体',sans-serif;
+	margin-bottom:30px;
+}
+aside ul a {
+	color:#1e73be;
+	font:14px/26px '新宋体','宋体',serif;
+}

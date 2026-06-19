@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*关系选择器(层次选择器)*/
+		/*后代元素*/
+		/* div ul{
+			border:1px solid black;
+		} */
+		/*儿子元素*/
+		/* div>ul{
+			border:1px solid red;
+		} */
+		/*相邻元素*/
+		/* div+p{
+			border:1px solid orange;
+		} */
+		/* 兄弟元素 */
+		div~p{
+			border:1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>第一层</li>
+			<li>
+				<ul>
+					<li>春</li>
+					<li>夏</li>
+					<li>秋</li>
+					<li>冬</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<p>p1</p>
+	<span><p>span下的p</p></span>
+	<p>p2</p>
+</body>
+</html>

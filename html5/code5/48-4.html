@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*伪对象选择器*/
+		/*造的为对象是作为元素的子元素存在,并且默认是一个行内元素*/
+		p::after{
+			content:'^_^';
+		}
+		p::before{
+			content:'!';
+		}
+	</style>
+</head>
+<body>
+	<p>我是美女</p>
+	<p>我是美女</p>
+	<p>我是美女</p>
+</body>
+</html>

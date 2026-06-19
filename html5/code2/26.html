@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*id选择器*/
+		/* #test1{
+			border:1px solid red;
+				} */
+		/*类选择器*/
+		/* .test2{
+			border:1px solid blue;
+		} */
+		/*标签选择器*/
+		/* p{
+			border:1px solid orange;
+		} */
+		/*层级选择器*/
+		/* div p{
+			border:1px solid green;
+		} */
+		/*群组选择器*/
+		#test1,.test2,p{
+			border:1px solid purple;
+		}
+	</style>
+</head>
+<body>
+	<div id="test1">id test1</div>
+	<div class="test2">class test2</div>
+	<div class="test2">class test2</div>
+	<div class="test2">class test2</div>
+	<div>
+		<p>div下的p标签</p>
+	</div>
+	<p>我是body下的p</p>
+</body>
+</html>
