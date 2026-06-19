@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+function t3(greet) {
+    alert(greet);
+    
+    function greet() {
+    } 
+    greet = 'hello';
+    
+    alert(greet);
+} 
+/*
+0. AO {}
+1. 分析参数, AO {greet:null}
+2. 分析var , 无 略过
+3. 分析函数声明, AO {greet: functon(){}}
+
+4.执行
+  13: function(){}
+  17: AO.greet = hello
+  18: hello
+*/
+t3(null);
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="提交">
+</body>
+<script>
+//  <input onclick="xx()">
+//  DOM level 0 ,内联方式
+
+// <input >
+// xxDOMobj.onclick = 
+// DOM level 0 , 外联方式
+
+var inp = document.getElementsByTagName('input')[0];
+inp.onclick = function() {
+    alert('丁');
+}
+
+inp.onclick = function() {
+    alert('当');
+}
+
+</script>
+</html>

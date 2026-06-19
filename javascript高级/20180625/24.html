@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+var intro = function (x , y) {
+    alert('我叫'+this.name);
+    console.log(x,y);
+}
+
+var dog = {
+    name:'哮天',
+    color:'yellow',
+}
+
+var cat = {
+    name : '加肥猫',
+    color :'gray',
+
+    toy : {
+        name : '小腾机器人',
+    }, 
+}
+
+intro.call(dog , 3,4);
+intro.call(cat , 5,6);
+intro.apply(cat , [7,8]);
+</script>
+</html>

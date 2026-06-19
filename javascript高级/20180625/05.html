@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<style>
+div {
+    margin:0 auto;
+    width: 80%;
+    height: 80%;
+}
+
+#china {
+  width: 400px;
+  height: 400px;
+  border: 1px solid red;
+}
+
+#bj {
+    border: 1px solid blue;
+}
+
+#hd {
+    border:1px solid green;
+}
+
+</style>
+<body>
+    <div id="china">china
+        <div id="bj">bj
+            <div id="hd">hd</div>
+        </div>
+    </div>
+</body>
+<script>
+// 第3个参数 是否捕捉,转认false
+china.addEventListener('click' , function() {
+    alert('china捕捉到');
+} , true);
+bj.addEventListener('click' , function() {
+    alert('bj捕捉到');
+} , true);
+hd.addEventListener('click' , function() {
+    alert('hd捕捉到');
+} , true);
+
+china.addEventListener('click' , function() {
+    alert('冒泡到china');
+} , false);
+bj.addEventListener('click' , function() {
+    alert('冒泡到bj');
+} , false);
+hd.addEventListener('click' , function() {
+    alert('冒泡到hd');
+} , false);
+</script>
+</html>

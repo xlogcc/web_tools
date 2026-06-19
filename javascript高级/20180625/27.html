@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// 作一个变量, 只有我的函数能碰到ta
+
+var Yshiba = {};
+
+Yshiba.inc = (function() {
+    var cnt = 0;
+
+    return function () {
+        return ++cnt;
+    }
+})();
+
+console.log( Yshiba.inc() );
+console.log( Yshiba.inc() );
+console.log( Yshiba.inc() );
+console.log( Yshiba.inc() );
+
+
+
+
+</script>
+</html>

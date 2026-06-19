@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+function t1() {
+    var age = 90;
+
+    return function() {
+        alert(++age);
+    }
+}
+
+function t2() {
+    var age = 10;
+
+    var tmp = t1();
+    tmp();
+}
+
+/*
+函数的作用域 取决于 函数声明 的阶段,
+而非运行的阶段
+*/
+t2();
+
+</script>
+</html>

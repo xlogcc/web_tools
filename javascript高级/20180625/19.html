@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        func_get_args()
+        ...
+    </pre>
+</body>
+<script>
+function sum() {
+    console.log(arguments);
+}
+
+sum(1,2,3);
+sum('a' , 'b' , 'c' , 'd' , 'e');
+
+function t(x,y) {
+    arguments[0] +=1;
+    console.log(x);
+
+    y-=1;
+    console.log(arguments[1]);
+}
+
+t(5,5);
+
+</script>
+</html>

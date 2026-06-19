@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="丁当">
+    <input type="button" value="解">    
+</body>
+<script>
+var dang = function() {
+    alert('当');
+};
+
+var inps = document.getElementsByTagName('input');
+inps[0].addEventListener('click' , function() {
+    alert('丁');
+});
+inps[0].addEventListener('click' , dang);
+
+inps[1].onclick = function() {
+    inps[0].removeEventListener('click' , dang);
+}
+
+</script>
+</html>

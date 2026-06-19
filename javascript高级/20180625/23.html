@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+'use strict';
+function t() {
+    this.age = 99;
+    console.log(window);
+}
+
+/*
+没通过任何对象的属性引用到该函数
+因此,this为null
+
+在JS的ES5标准之前, this如果为null ,转而理解为全局对象
+在ES5及之后, 会报异常
+*/
+
+t();
+
+</script>
+</html>

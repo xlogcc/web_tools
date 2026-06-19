@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+(function (x,y) {
+    return x-y;
+})(6,3);
+
+var rs = (function (n) {
+    if(n>1) {
+        return n + arguments.callee(n-1);
+    } else {
+        return 1;
+    }
+})(5);
+
+//var rs = sum(5);
+alert(rs);
+
+</script>
+</html>

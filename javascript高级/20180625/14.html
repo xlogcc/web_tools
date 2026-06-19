@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+function t(age) {
+    console.log(age);
+    var age = 99;
+    console.log(age);
+}
+
+/*
+0. AO {}
+1. 分析参数 AO {age:5}
+2. 分析var, 已有同名属性, 不做影响 {age:5}
+3. 分析函数 略过 {age:5}
+
+4. 执行:
+ 14: 5
+ 15. AO.age = 99;
+ 16. 99
+*/
+t(5);
+
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+function t(a,b) {
+  var c = 6;
+  
+  function x() {
+  }
+
+}
+
+t(3,4);
+
+/*
+函数内所有能访问到的局部变量, 都在 AO(Active Object)对象的属性性放着
+
+词法分析:
+0. 生成 AO对象, 空的 {}
+1. 分析函数的参数, 以参数名为属性名,以参数值为属性值 {a:3 , b:4}
+
+2. 分析var 声明, 以变量名为属性名, 值为undefined. 如果AO上已有同名属性,不对AO做任何变化影响 {a:3, b:4 , c:undefined}
+
+3. 分析函数声明, 以函数名为属性名, 函数体为属性值
+   如果AO上已有同名属性, 直接覆盖 {a:3, b:4 , c:undefined , x:function(){}}
+
+4. 执行过程...
+*/
+
+
+var str1 = 'global';
+var str2 = 'g2';
+function t() {
+    console.log(str1); // global
+    console.log(str2); // g2 ?, local?
+    var str2 = 'local';
+
+}
+
+/*
+0. AO {}
+1. 分析参数, 无, 略过. AO {}
+2. 分析var声明, AO {str2:undefined}
+3. 分析函数声明, 无, 略过.  AO {str2:undefined}
+
+4. 执行:
+  41行, AO上没有str1,往上级找, global
+  42行, AO找str2, 有, 值为undefined, 
+*/
+t();
+
+</script>
+</html>

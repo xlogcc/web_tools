@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+function t() {
+    var age = 90;
+
+    return function() {
+        return ++age;
+    }
+}
+
+var tmp = t();
+
+console.log( tmp() ); // 91
+console.log( tmp() ); // 92
+
+
+</script>
+</html>
