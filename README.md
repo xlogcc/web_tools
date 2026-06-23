@@ -14,7 +14,7 @@
 - javascript高级视频教程：[https://www.bilibili.com/video/BV1E5jq6jEtZ](https://www.bilibili.com/video/BV1E5jq6jEtZ "https://www.bilibili.com/video/BV1E5jq6jEtZ")
 
 
-- 源码：[(https://github.com/xlogcc/bilibili_codes)]("https://github.com/xlogcc/bilibili_codes")
+- 源码：[https://github.com/xlogcc/bilibili_codes](https://github.com/xlogcc/bilibili_codes "https://github.com/xlogcc/bilibili_codes")
 
 
 
